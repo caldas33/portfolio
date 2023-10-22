@@ -6,7 +6,6 @@
 </head>
 
 <body>
-
   <header>
     <a target="_blank" href="https://www.linkedin.com/in/duartecardoso/">
       <img src="https://ytpr.co.ke/wp-content/uploads/2020/06/linkedin-icon-png-transparent-background-8.png"
@@ -25,25 +24,35 @@
         width="45" height="45" align="right">
     </a>
 
+    <button id="mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+
   </header>
-
-
 
   <section id="about">
     <div class="container">
       <span class="loader"></span>
-      <h1><u>Hi! I'm Duarte.</u></h1>
+      <h1>Hi! I'm Duarte.</h1>
       <h2>
 
-        I studied software engineering and I am based in Madalena, Porto, Portugal.
-        <br><br>I am working as a fullstack developer and also love process automation - feel free to reach out for new
+        I studied <u>software engineering</u> and I am based in Madalena, Porto, Portugal.
+        <br><br>I am working as a <u>fullstack developer</u> and also love process automation - feel free to reach out
+        for new
         projects.
       </h2>
     </div>
 
-
-
   </section>
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+
+      body.classList.toggle('dark-mode');
+      body.classList.toggle('light-mode');
+    }
+  </script>
+
 
 </body>
 

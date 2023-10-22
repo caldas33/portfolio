@@ -3,49 +3,15 @@ header {
   padding: 3px 0;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: right;
+u {
+  color: orange;
 }
 
-nav ul li {
-  margin: 0 20px;
-}
-
-
-.img {
-  margin-right: 100px;
-}
-
-/* Letters in the navigation bar */
 nav a {
   color: white;
   text-decoration: none;
 }
 
-section {
-  box-sizing: border-box;
-  text-align: left;
-  background-color: black;
-}
-
-/* Styling for the tabs */
-nav a:hover,
-nav a:focus,
-nav a:active {
-  color: orange;
-}
-
-/* Styling for the active tab */
-nav a.active {
-  font-family: Helvetica; 
-  color: orange;
-  font-weight: bold;
-}
-
-
-/* Basic styling */
 body {
   font-family: Helvetica; 
   color: white; 
@@ -60,30 +26,19 @@ body {
   background-color: black;
 }
 
-
-
-/* Styling for the welcome heading */
 h1 {
   font-size: 72px;
   margin-top: -100px;
   margin-left: 100px;
 }
 
-h1:hover,
-h1:active,
-h1:focus{
-  color: orange;
-}
-
-/* Styling for the welcome*/
 h2 {
   font-size: 16px;
   font-family: Helvetica; 
-  margin-bottom:200px;
+  margin-bottom: 200px;
   margin-left: 100px;
 }
 
-/* Styling for the background image */
 #about {
   background-size: cover;
   background-position: center;
@@ -96,7 +51,7 @@ h2 {
   position: relative;
 }
 
-.loader:before , .loader:after {
+.loader:before, .loader:after {
   content: "";
   position: absolute;
   left: 193%;
@@ -104,24 +59,42 @@ h2 {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color:#FFF  ;
-  transform: translate(-50% , -100%)  scale(0);
+  background-color: #FFF;
+  transform: translate(-50%, -100%) scale(0);
   animation: push_401 2s infinite linear;
-  
 }
 
 .loader:after {
   animation-delay: 1s;
-  background-color:#FFF 
+  background-color: #FFF;
 }
 
 @keyframes push_401 {
-  0% , 50% {
-    transform: translate(-50% , 0%)  scale(1)
+  0%, 50% {
+    transform: translate(-50%, 0%) scale(1);
   }
 
   100% {
-    transform: translate(-50%, -100%) scale(0)
+    transform: translate(-50%, -100%) scale(0);
   }
 }
 
+.dark-mode, 
+.dark-mode .container,
+.dark-mode header {
+  background-color: #FFF;
+  color: white;
+}
+
+.dark-mode h1 {
+  color: orange;
+}
+
+.dark-mode h2 {
+  color: black;
+}
+
+.light-mode {
+  background-color: white;
+  color: #FFFFFF;
+}
